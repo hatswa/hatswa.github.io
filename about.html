@@ -1,46 +1,129 @@
-<link rel="stylesheet" type="text/css" href="styles.css">
-<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
-<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script src="script1.js"></script>
-
-
-<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<p class="fullparaindent"> <title> Travel Mood </title> </p>
+	<!-- CORE CSS -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/custom.css">
+	<link rel="stylesheet" href="css/profile.css">
+	<link rel="stylesheet" href="css/animate.min.css">
+	<link rel="stylesheet" href="css/main.css">
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="http://www.zhangjenny.com/favicon.ico" type="image/icon"> 
+    <link rel="icon" href="http://www.zhangjenny.com/favicon.ico" type="image/icon">
+    
+    <!-- JAVASCRIPT -->
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script>
+      $(document).ready(function()
+      {
+        $("#about").click(function() 
+        {
+          $(".page-chooser li").removeClass("active");
+          $(this).addClass("active");
+          $("#resume-content").fadeOut(400);
+          setTimeout(function() {
+              $("#about-me-content").fadeIn(400)
+          }, 350);
+        });
+
+        $("#resume").click(function() 
+        {
+          $(".page-chooser li").removeClass("active");
+          $(this).addClass("active");
+          $("#about-me-content").fadeOut(400);
+          setTimeout(function() {
+            $("#resume-content").fadeIn(400)
+          }, 350);
+        });
+      });
+    </script>
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+    	new WOW().init();
+    </script>
 
 </head>
 
+<body>
+  <img src="images/logo.svg" class="navBar-logo">
+	<div class="header profile light" id="jz_aboutHeader">
+      <div class="header-content">
+        <br></br>
+        <br></br>
+        <br></br>
+        <center>
+            <p class="wow fadeIn" data-wow-duration="1s" style="font-size:77px;">ABOUT ME</p>
+          </center>
+      </div>
+    </div>
 
-<body id="aboutasd">
-  <center> <h1 id= "name1">  Travel Mood  </h1> </center>
-  
-  <p>  </p>
+  <div class="navBar">
+    <nav>
+      <ul class="left">
+        <li><a href="index.html">JENNY ZHANG</a></li>
+      </ul>
+      <ul>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+      </ul>
+    </nav>
+  </div>
 
- <center>  <image src="worldmap7.png" alt="blah" usemap= "#worldmap" style="width:1600px;height:900.535px"> </center>
+  <div class="page-chooser">
+      <ul class="wrap">
+        <li id="about" class="active wow fadeIn" data-wow-duration="1s" data-wow-delay=".3s">About Me</li>
+        <li id="resume" class="wow fadeIn" data-wow-duration="1s" data-wow-delay=".3s">Resume</li>
+      </ul>
+    </div>
 
-<map name="worldmap">
-   <area shape="circle" coords="448,267,30" href="newyork.html" alt="nyc_broadway">
-  <area shape="circle" coords="1151,338,40" href="india.html" alt="india">
-  <area shape="circle" coords="779,239,30" href="spain.html" alt="spain">
-  <area shape="circle" coords="793,172,30" href="london.html" alt="london">
-  <!--<area shape="circle" coords="695,400,50" href="http://cnn.com" alt="paris">-->
-  <area shape="circle" coords="581,515,50" href="brazil.html" alt="brazil">
-  <area shape="circle" coords="1460,635,40" href="austrailia.html" alt="sydney">
-  <area shape="rect" coords="497,792,1147,855" href="antarctica.html" alt="antartica">
-  <area shape="circle" coords="904,601,30" href="southafrica.html" alt="south_africa">
-  <area shape="circle" coords="1338,286,30" href="beijing.html" alt="beijing">
-  <area shape="circle" coords="1053,315,30" href="dubai.html" alt="dubai">
+    <!--    About Me Content    -->
+    <div id="about-me-content">
+      <div class="container" style="padding:40px;">
+        <h1 class="page-header wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">About Me</h1>
+        <div class="col-md-3">
+          <img src="images/ID_pic.jpg" width="250px" style="padding-top:80px; margin-left:-12px;">
+        </div>
+        <div class="col-md-9">
+          <p class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s" style="font-size:18px">I am a freshman at Princeton University majoring in Economics with a certificate in Finance. Originally from Hunterdon County, NJ, I graduated North Hunterdon High School as salutatorian and have attended New Jersey Governor's School in the Sciences. I am currently the Undergraduate Student Government Class of 2018 Officer and am involved in Tiger Investments, Princeton Model UN, and Princeton Corporate Finance Club. In addition to being well-versed in Adobe Photoshop, Illustrator, and Lightroom, I am also experienced with Java to a lesser degree. I am fluent in Mandarin and enjoy reading Chinese novels in my spare time.</p>
+          <br></br>
+          <p class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s" style="font-size:18px">Ever since I colored the walls in my house at age four, I have been considered the most "artistic" member of my family. I like art because it is a cathartic process that helps me find my heart and soul. My works of art are fragments of my emotions and aspirations, personality and background - snapshots of who I am. When pieced together, they create a complete picture - an n-dimensional me.</p>
+          <br></br>
+          <p class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s" style="font-size:18px">In my artwork, I primarily use acrylic paint, oil paint, ink, and graphite pencil. I also love photography and have photographed my own artwork and the pictures on this website. Recently, I started experimenting with graphic design in Illustrator, designing various logos and vector art. I have much to improve on and hope to become more practiced in illustration and various forms of art.</p>
+        </div>
+      </div>
 
-</map> 
+      <br></br>
+      <a href="projects.html" class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s"><span id="open-info" class="button blue arrow">View My Work</span> </a>
+      <br></br>
+      <br></br>
 
-<audio controls autoplay loop>
-  <source src="space.mp3" type="audio/mpeg">
-Your browser does not support the audio element.
-</audio> 
+    </div>
+
+    <!-- Resume Content -->
+    <div id="resume-content" style="display: none;">
+      <div class="container">
+        <h1 class="page-header">Resume</h1>
+          <br></br>
+          <p  style="font-size:18px">If you would like to obtain a copy of my resume, please feel free to <a href="contact.html">contact me</a> and I will get back to you as soon as possible.</p>
+          <br></br>
+          <p style="font-size:18px">If you'd like to see my artwork and graphic designs, please click the button below.</p>
+          <br></br>
+          <center>
+            <a href="portfolio.html"> <span class="button-dark">View Portfolio</span> </a>
+          </center>
+          <br></br>
+          <br></br>
+      </div>
+    </div>
+
+    <!--             FOOTER            -->
+    <footer class="footer">
+      <div class="wrap">
+        <span class="social">To keep updated with my work, follow me on <a href="https://twitter.com/jennyzhang262" title="Follow me on Twitter">Twitter</a>.</span>
+        <span class="copyright">Built by <a href="http://www.victorzhou.com" target="_blank">Victor Zhou</a><br>Designed by Jenny Zhang</span>
+      </div>
+    </footer>
 </body>
-
-
-
-
 </html>

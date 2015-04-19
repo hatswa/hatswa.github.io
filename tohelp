@@ -16,27 +16,19 @@
     </script>
 
 </head>
-<div class="navBar">
-    <nav>
-      <ul class="left">
-        <li><a href="index.html">Home</a></li>
-      </ul>
-      <ul>
-        <li><a href="tohelp.html">Back</a></li>
-      </ul>
-    </nav>
-  </div>
+
 <body>
   <div class="header profile light" id="jz_index">
       <div class="header-content">
+    <!--    <img src="images/logo_circle.svg">  -->
           <br></br>
           <center>
-             <p class="wow fa+deIn" data-wow-duration="1s">Do You...</p>
+             <p class="wow fa+deIn" data-wow-duration="1s">Blah blah blah</p>
           </center>
           <br></br>
           <center>
-          	<a href="needhelp.html" class="button-shadowed">Need Help</a>
-          	<a href="tohelp.html" class="button-shadowed">Want To Help</a>
+          	<a href="about.html" class="button-shadowed">I Need Help</a>
+          	<a href="portfolio.html" class="button-shadowed">I want to Help</a>
           </center>
       </div>
     </div>
@@ -44,11 +36,11 @@
 
 
     <!--             FOOTER            -->
-<footer class="footer">
+<!--    <footer class="footer">
       <div class="wrap">
-        <span class="social">Last Edited April 18, 2015</span>
+        <span class="social">To keep updated with my work, follow me on <a href="https://twitter.com/jennyzhang262" title="Follow me on Twitter">Twitter</a>.</span>
+        <span class="copyright">Built by <a href="http://www.victorzhou.com" target="_blank">Victor Zhou</a><br>Designed by Jenny Zhang</span>
       </div>
-    </footer>
+    </footer> -->
 </body>
 </html>
-
